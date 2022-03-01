@@ -18,8 +18,7 @@ Go To Car List
 Selecting Car Brand In List
     Click Element   //*[@id="ms-list-1"]/button
     Click Element   //*[@id="ms-list-1"]/div/ul/li[3]/label
-    Click Element   //*[@id="carTable"]/tbody/tr[9]/td[2]
-    Wait Until Page Contains  Tesla Roadster
+    Wait Until Page Contains  Roadster
 
 End Web Test
     Close Browser
