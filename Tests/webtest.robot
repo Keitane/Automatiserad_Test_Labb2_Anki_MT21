@@ -10,7 +10,9 @@ Test Teardown  End Web Test
 *** Variables ***
 ${BROWSER}  chrome
 ${URL}  http://rental4.infotiv.net/
-${DATE}
+${date} =  Get Current Date
+${element_text}  Get Text
+${infotiv_date}  convert into date
 
 
 *** Test Cases ***
@@ -20,6 +22,7 @@ User Can Access Website And See Current Date
     Begin Web Test
     Go To Web Page
     Verify Page Contains
+    Check Date On Page
     End Web Test
 
 
@@ -33,7 +36,7 @@ User Can Get To Car Selection Page
     End Web Test
 
 User Can Get To Choose A Car Make In Car List
-    [Documentation]  Once accessing the website; getting to choose what brand of car
+    [Documentation]  Once accessing the website; getting to choose what brand of cars
     [Tags]  ChoosingCarBrand
     Begin Web Test
     Go To Web Page

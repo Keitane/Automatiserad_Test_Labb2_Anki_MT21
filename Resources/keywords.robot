@@ -11,6 +11,13 @@ Verify Page Contains
     Click Element   //*[@id="title"]
     Wait Until Page Contains   When do you want to make your trip?
 
+Check Date On Page
+    ${date} =    Get Current Date  result_format=%Y-%m-%d
+    ${attr}=  Get Element Attribute  //*[@id="start"]  value
+    Log  Result ${attr}
+    ${infotiv_date} =  Convert Date  ${attr}  result_format=%Y-%m-%d
+    Should Be Equal    ${date}    ${infotiv_date}
+
 Go To Car List
     Click Element   //*[@id="continue"]
     Wait Until Page Contains   What would you like to drive?
