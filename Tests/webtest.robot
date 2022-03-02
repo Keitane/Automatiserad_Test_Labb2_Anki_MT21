@@ -19,28 +19,22 @@ ${infotiv_date}  convert into date
 User Can Access Website And See Current Date
        [Documentation]  Once accessing the website; being able to see the selection of dates
        [Tags]  Time
-    Begin Web Test
     Go To Web Page
     Verify Page Contains
     Check Date On Page
-    End Web Test
 
 
 User Can Get To Car Selection Page
     [Documentation]  Once accessing the website; getting to the car selection list
-    [Tags]  CarList
-    Begin Web Test
+    [Tags]  Car
     Go To Web Page
     Verify Page Contains
     Go To Car List
-    End Web Test
 
 User Can Get To Choose A Car Make In Car List
     [Documentation]  Once accessing the website; getting to choose what brand of cars
-    [Tags]  ChoosingCarBrand
-    Begin Web Test
+    [Tags]  Car
     Go To Web Page
     Verify Page Contains
     Go To Car List
     Selecting Car Brand In List
-    End Web Test
