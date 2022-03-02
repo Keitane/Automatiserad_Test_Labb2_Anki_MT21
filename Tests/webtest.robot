@@ -14,7 +14,6 @@ ${date} =  Get Current Date
 ${element_text}  Get Text
 ${infotiv_date}  convert into date
 
-
 *** Test Cases ***
 User Can Access Website And See Current Date
        [Documentation]  Once accessing the website; being able to see the selection of dates
